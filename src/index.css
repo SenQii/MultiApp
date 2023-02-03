@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+}
+
+body{
+/* 230, 165, 0
+  189, 0, 44 */
+  height: 100vh;
+  background-color:wheat;
+  background-image: linear-gradient(120deg ,
+                                  rgb(49, 123, 163, 0.93)30%,
+                                  rgb(251, 176, 63, 0.93)30% 45%,
+                                  rgb(229, 60, 99, 0.93)45%, 80%,
+                                  rgba(251, 176, 63, 0.93)80%);
+  display: flex;
+  justify-content: center; /* --- */
+  align-items: center;/* |||| */
+  text-align: center;
+}
+
+
+.form{
+  background-color: rgba(245, 222, 179, 0.366);
+  -webkit-backdrop-filter: blur(2px); 
+  backdrop-filter: blur(2px);  
+
+  height: 40vh;
+  /* min-width: 10px; */
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;/* |||| */
+  padding: 25px;
+  box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin: 30px;
+  
+}
+@media only screen 
+  and (max-device-width: 480px) {
+
+      input{
+      width: 140px !important;
+      padding: 70px;
+      font-size: 17px !important;
+      
+      }
+      .txt{
+          font-size: 25px !important;
+      }
+      button[type="submit"]{
+          width: 100px;
+          height: 40px;
+          margin-top: 30px !important;
+
+      }
+  }
+input{
+  display: block;
+  width: 200px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+  padding: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+
+  /* border-radius: 200px; */
+  border-bottom: solid 3px rgba(0, 0, 0, 0.607);  
+  background-color: rgba(0, 0, 0, 0);
+  color: white; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input[type="number"]{
+  
+  appearance: none;
+  border-radius: 5px;
+  outline: none;
+  color: black; 
+}
+::placeholder{
+  color: rgba(255, 255, 255, 0.595);
+}
+button[type="submit"]:hover{
+  background-color:rgba(35, 95, 128, 0.93);
+
+}
+button[type="submit"]{
+
+  background-color:rgb(49, 123, 163, 0.93);
+  color: white;
+  border:none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-top: 40px;
+}
+.score, .txt, input, button{
+  padding-top: 25px;
+  
+}
+.score{
+  font-size: 25px;
+  text-align: right !important;
+  color:rgba(35, 95, 128, 0.93);
+  text-shadow: 0px 0px 10px  rgba(254, 254, 254, 0.43);
+  /* -webkit-text-stroke: 3px black; */
+}
+.txt{
+  font-size: 30px;
+}
