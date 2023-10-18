@@ -9,12 +9,11 @@ function App() {
 
   const [points, setPoints] = useState(0);
 
-  let audio = useMemo(() => new Audio('/yes_1.wav'), []);
+
 
   const handleSubmit = () => {
     if (resault === number1 * number2) {
       setPoints((prev) => prev + 1);
-      audio.play();
     } else {
       setPoints((prev) => prev - 1);
     }
